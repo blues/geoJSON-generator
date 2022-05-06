@@ -22,10 +22,10 @@ def process_json(raw_json):
                         event["value"]["best_lat"]
                     ]
                 },
-                "properties": {
-                    "device": event["device"]
-                }
-                # "properties": event
+                #"properties": {
+                #    "device": event["device"]
+                #}
+                "properties": event
             }
             processed_json["features"].append(geo_point)
 
